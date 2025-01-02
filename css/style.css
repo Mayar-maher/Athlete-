@@ -1,0 +1,215 @@
+*{
+    font-family: "Alegreya", serif;
+}
+/* ----------------------- nav -----------  */
+.navbar-expand-lg .navbar-nav .nav-link {
+    transition: all 0.5s;
+    color: white;
+    font-weight: 600;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    color: #EC3642;
+}
+nav .new-btn-red{
+    transition: all 0.3 ease;
+    font-size: 15px;
+}
+nav .new-btn-red:hover{
+    color: white;
+    background-color: #EC3642;
+}
+/* --------------- header --------------  */
+.bg-1{
+    background: linear-gradient(rgba(0, 0, 0, 0.455) 0% 100%), url(../images/bg_1.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+.bg-2{
+    background: linear-gradient(rgba(0, 0, 0, 0.455) 0% 100%), url(../images/bg_2.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+.bg-3{
+    background: linear-gradient(rgba(0, 0, 0, 0.455) 0% 100%), url(../images/bg_3.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+.custom-heading {
+    font-size: 70px;
+    font-weight: 700;
+}
+
+
+/* ----------------------------------- about -----------------  */
+#about{
+    background: linear-gradient(rgba(0, 0, 0, 0.455) 0% 100%), url(../images/bg-position-3.jpg);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+.icon-about {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .icon-about::after {
+    content: '';
+    position: absolute;
+    top: -2px; 
+    right: -2px;
+    width: 20px; 
+    height: 20px; 
+    background-color: #EC3642; 
+    transform: rotate(180deg);
+    z-index: -1;
+  }
+
+  .icon-about2 {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .icon-about2::after {
+    content: '';
+    position: absolute;
+    top: -2px; 
+    left: -2px;
+    width: 20px;
+    height: 20px; 
+    background-color: #EC3642; 
+    transform: rotate(180deg);
+    z-index: -1;
+  }
+  /* ------------------------------------- cards -------------------  */
+  #cards{
+    background: linear-gradient(rgba(0, 0, 0, 0.455) 0% 100%), url(../images/bg-position-2-before.png);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+.card-anmi{
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card-anmi:hover {
+    transform: translateY(-15px);
+  }
+  .icon-about i,
+  .icon-about2 i{
+    transition: transform 0.3s ease;
+    
+  }
+  .icon-about:hover i,
+  .icon-about2:hover i{
+    transform: rotate(360deg);
+  }
+  .card-anmi::before ,
+  .icon-about::before,
+  .icon-about2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.266); 
+    z-index: 1; 
+    transition: opacity 0.3s ease; 
+    opacity: 1; 
+  }
+  
+  .card-anmi:hover::before ,
+  .icon-about:hover::before ,
+  .icon-about2:hover::before{
+    opacity: 0;
+  }
+/* ---------------------------- picture section ----------  */
+  #pic{
+    background: linear-gradient(rgba(157, 8, 8, 0.518) 0% 100% ),url(../images/training\ -today.jpg);
+    height: 40vh;
+    background-attachment: fixed;
+}
+ /* ------------------------- gallery ---------------------  */
+.athlete-1{
+    background: linear-gradient(rgba(0, 0, 0, 0.463) 0% 100% ),url(../images/athlete-1.jpg);
+}
+.athlete-2{
+    background: linear-gradient(rgba(0, 0, 0, 0.463) 0% 100% ),url(../images/athlete-2.jpg);
+}
+.athlete-3{
+    background: linear-gradient(rgba(0, 0, 0, 0.463) 0% 100% ),url(../images/athlete-3.jpg);
+}
+.athlete-4{
+    background: linear-gradient(rgba(0, 0, 0, 0.463) 0% 100% ),url(../images/athlete-4.jpg);
+}
+.athlete-5{
+    background: linear-gradient(rgba(0, 0, 0, 0.463) 0% 100% ),url(../images/athlete-5.jpg);
+}
+.athlete-6{
+    background: linear-gradient(rgba(0, 0, 0, 0.463) 0% 100% ),url(../images/athlete-6.jpg);
+}
+.athlete-7{
+    background: linear-gradient(rgba(0, 0, 0, 0.463) 0% 100% ),url(../images/athlete-7.jpg);
+}
+.athlete-1, .athlete-2, .athlete-3, .athlete-4,
+.athlete-5, .athlete-6, .athlete-7 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+
+}
+.layer:hover{
+    opacity: 1;
+}
+.card:hover .layer{
+    transform: scale(1);
+}
+.layer{
+    background-color: #EC3642;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: all 0.5s ease;
+    overflow: hidden;
+    opacity: 0;
+    
+}
+
+/* ----------------------------- copyright -----------  */
+.icon-list i {
+    font-size: 20px;
+    color: white;
+    margin-right: 3px;
+}
+.facebook_icon,
+.linkedin_icon,
+.google_icon{
+    transition: all 1s ease;
+}
+.google_icon:hover,
+.linkedin_icon:hover,
+.facebook_icon:hover{
+    color: rgb(174, 21, 21);
+    transform: scale(1.2);
+}
+
+/* --------------------- icon-up --------------------  */
+.icon-up{
+    transition: all 0.3 ease;
+}
+.icon-up:hover{
+    background-color: #EC3642;
+}
